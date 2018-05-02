@@ -41,8 +41,10 @@ ancestor(A, B) :- parent(A, X), ancestor(X, B).
 descendant(A, B) :- parent(B, A).
 descendant(A, B) :- parent(B, X), ancestor(X, A).
 
-%older, checks age of both then compares them.
-older(O,Y) :- born(O,X),born(Y,Z),X<Z.
+%older, checks age of both then compares them, age checks if dead and calculates age of death, if not age to current date
+age(P,X) :- born(P,Born),died(P,Date),X is (Date-Born).
+age(P,X) :- born(P,Born),not(died(P,Date)),X is (2018-Born).
+older(O,Y) :- age(O,X),age(Y,Z),X>Z.
 younger(Y,O) :- older(O,Y).
 
 %checks the range of reign and checks if they were born in between them

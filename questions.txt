@@ -30,17 +30,8 @@
     X = 'Prince Philip' ;
 12. False, none.
 13. False
-14. older(X, 'Queen Elizabeth II').
-    X = 'Queen Victoria' ;
-    X = 'Princess Alexandra of Denmark' ;
-    X = 'Queen Mary' ;
-    X = 'Mrs Simpson' ;
+14.  older(X, 'Queen Elizabeth II').
     X = 'Lady Elizabeth Bowes-Lyon' ;
-    X = 'Prince Albert' ;
-    X = 'King Edward VII' ;
-    X = 'King George V' ;
-    X = 'King Edward VIII' ;
-    X = 'King George VI' ;
     X = 'Prince Philip' ;
 15. King George V
 16. I like how you define rules and then use what you've defined to then find out
@@ -51,7 +42,7 @@
     too.
 19. Maybe 2-3 hours total.
 20. Uhm....I can't see myself using it except maybe for something I would do for
-    fun.  It was cool to learn but I guess probably not.
+    fun.  It was cool to learn but I guess I don't have the use cases.
 EC1. cousin(X, 'Prince Charles').
     X = 'Viscount Linley' ;
     X = 'Lady Sarah Chatto' ;
